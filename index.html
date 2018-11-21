@@ -20,7 +20,7 @@
     
 
    <script type="text/javascript">
-      var choices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o" , "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+      var Computerchoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o" , "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
       var wins = 0;
       var losses = 0;
@@ -29,10 +29,10 @@
 
       document.onkeyup = function(event) {
           var userGuess = event.key;
-          var computerGuess = choices[Math.floor(Math.random() * computerGuess.length)];
+          var computerGuess = Computerchoices[Math.floor(Math.random() * Computerchoices.length)];
           var options = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o" , "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-          if (options.indexof(userGuess) > -1) {
+          if (options.indexOf(userGuess) > -1) {
 
               if (userGuess === computerGuess) {
                   wins ++;
